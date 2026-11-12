@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav class="navbar">
+
+    <div class="logo">
+        Kwiksave
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/categories">Categories</a>
+        <a href="/test2">1</a>
+        <a href="/test3">2</a>
+    </div>
+
+</nav>
+
+{% block content %} {% endblock %}
+
+</body>
+</html>
