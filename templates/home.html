@@ -8,7 +8,9 @@
 {% extends 'navbar.html' %}
 
 {% block content %}
-    <p>Welcome to Kwiksave!</p>
+<h1>Welcome {{ user.username }}!</h1>
+
+<a href="/logout">Logout</a>
 {% endblock %}
 </body>
 </html>

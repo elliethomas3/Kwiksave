@@ -4,15 +4,25 @@
     <title>Kwiksave - Login</title>
 </head>
 <body>
+{% extends 'navbar.html' %}
+
+{% block content %}
+<h1>Login</h1>
+
 <form method="POST">
-    <p>Username:</p>
-    <input type="text" username="username">
-    <p>Password:</p>
-    <input type="text" password="password">
+
+    <input type="email" name="email"
+           placeholder="Email" required>
+
+    <input type="password" name="password"
+           placeholder="Password" required>
+
     <button type="submit">Login</button>
+
 </form>
 
-<h2>{{ username }}{{ password }}</h2>
+<a href="/register">Create an account</a>
 
+{% endblock %}
 </body>
 </html>
