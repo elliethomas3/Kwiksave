@@ -2,27 +2,49 @@
 <html lang="en">
 <head>
     <title>Kwiksave - Login</title>
+    <style>
+        h1, h2, .email, .pass, .button, a {
+            font-family: "Ebrima";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+        }
+
+        h1 {
+            color: pink;
+        }
+
+    </style>
 </head>
 <body>
-{% extends 'navbar.html' %}
+<h1>Kwiksave</h1>
 
-{% block content %}
-<h1>Login</h1>
+<h2>Login</h2>
 
 <form method="POST">
-
-    <input type="email" name="email"
+    <div class="email">
+        <input type="email" name="email"
            placeholder="Email" required>
+        <br><br>
+    </div>
 
-    <input type="password" name="password"
+    <div class="pass">
+        <input type="password" name="password"
            placeholder="Password" required>
+        <br><br>
+    </div>
 
-    <button type="submit">Login</button>
+    <div class="button">
+        <br><br>
+        <button type="submit">Login</button>
+    </div>
+
 
 </form>
 
+<br>
 <a href="/register">Create an account</a>
 
-{% endblock %}
 </body>
 </html>
