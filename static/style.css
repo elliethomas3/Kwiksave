@@ -1,29 +1,42 @@
 .navbar{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin: -10px -8px -10px -8px;
 
     padding: 15px 30px;
     border-bottom: 1px solid;
 
-    color: pink;
-}
-
-.nav-link{
-    display: flex;
-    gap: 25px;
+    color: darksalmon;
+    background-color: antiquewhite;
 }
 
 .nav-links a {
     text-decoration: none;
     font-size: 16px;
+    padding: 15px;
+    color: darksalmon;
 }
 
 .logo{
     font-size: 20px;
     font-weight: bold;
+    padding-right: 20px;
 }
 
 body {
     font-family: "Ebrima";
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: darksalmon;
+}
+
+a {
+    color: darksalmon;
+}
+
+a:hover {
+    color: lightsalmon;
+    font-weight: bold;
 }
